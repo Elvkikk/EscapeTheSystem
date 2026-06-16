@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import rooms from "../data/rooms.json";
-import { Inventory } from "./Inventory";
+import { Inventory } from "./inventory";
 
 export const Layout = () => {
   return (

@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import type { Item } from "./inventoryProvider";
+import type { Item } from "./InventoryProvider";
 
 type InventoryContextType = {
   inventory: Item[];

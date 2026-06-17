@@ -5,7 +5,7 @@ export const Inventory = () => {
 
   return (
     <aside className="inventory">
-      <h2>Inventory</h2>
+      <h2>Föremål</h2>
 
       <div className="inventory-list">
         {inventory.map((item) => (

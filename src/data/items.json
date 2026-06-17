@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "item": "UV Light",
-    "description": "A portable ultraviolet flashlight capable of revealing hidden markings.",
+    "item": "UV Lampa",
+    "description": "En bärbar ultraviolett ficklampa som kan avslöja dolda markeringar.",
     "image": "/images/items/uv-light.png"
   },
   {
     "id": 2,
-    "item": "Access Code",
-    "description": "A hidden code discovered in the Server Room.",
+    "item": "Åtkomstkod",
+    "description": "En dold kod upptäckt i serverrummet.",
     "image": "/images/items/access-code.png"
   },
   {
     "id": 3,
-    "item": "Security Keycard",
-    "description": "Provides access to restricted facility systems.",
+    "item": "Säkerhetsnyckelkort",
+    "description": "Ger åtkomst till begränsade anläggningssystem.",
     "image": "/images/items/security-keycard.png"
   },
   {
     "id": 4,
-    "item": "Maintenance Key",
-    "description": "Used to unlock service panels and maintenance equipment.",
+    "item": "Underhållsnyckel",
+    "description": "Används för att låsa upp servicepaneler och underhållsutrustning.",
     "image": "/images/items/maintenance-key.png"
   },
   {
     "id": 5,
-    "item": "Admin Credentials",
-    "description": "High-level administrator access credentials.",
+    "item": "Administratörsuppgifter",
+    "description": "Åtkomstuppgifter för högnivåadministratörer.",
     "image": "/images/items/admin-credentials.png"
   },
   {
     "id": 6,
-    "item": "Master Override Key",
-    "description": "The final key capable of disabling the AI lockdown.",
+    "item": "Mästarnyckel",
+    "description": "Den sista nyckeln som kan inaktivera AI-nedlåsningen.",
     "image": "/images/items/master-override-key.png"
   }
 ]

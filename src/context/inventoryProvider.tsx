@@ -15,15 +15,21 @@ export const InventoryProvider = ({ children }: { children: ReactNode }) => {
 
   const addItem = (itemId: number) => {
     const itemExists = inventory.some((item) => item.id === itemId);
-    const itemToAdd = items.find((item) => item.id === itemId) as Item | undefined;
+    const itemToAdd = items.find((item) => item.id === itemId) as
+      | Item
+      | undefined;
 
     if (!itemExists && itemToAdd) {
       setInventory([...inventory, itemToAdd]);
     }
   };
 
+  const resetInventory = () => {
+    setInventory([startItem]);
+  };
+
   return (
-    <InventoryContext.Provider value={{ inventory, addItem }}>
+    <InventoryContext.Provider value={{ inventory, addItem, resetInventory }}>
       {children}
     </InventoryContext.Provider>
   );

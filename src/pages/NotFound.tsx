@@ -8,5 +8,5 @@ export const NotFound = () => {
     navigate("/", { replace: true });
   }, [navigate]);
 
-  return <p>Redirecting...</p>;
+  return <p>Omdirigerar...</p>;
 };

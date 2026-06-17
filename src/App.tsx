@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./components/Layout";
-import { InventoryProvider } from "./context/InventoryProvider";
+import { InventoryProvider } from "./context/inventoryProvider";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { RoomPage } from "./pages/RoomPage";

@@ -18,6 +18,9 @@ export const RoomPage = () => {
     return null;
   }
 
+  const currentRoomIndex = rooms.findIndex((r) => r.roomPath === roomPath);
+  const nextRoom = rooms[currentRoomIndex + 1];
+
   const rewardIsCollected =
     room.itemToAdd !== null &&
     inventory.some((item) => item.id === room.itemToAdd);
@@ -64,12 +67,19 @@ export const RoomPage = () => {
 
       <div className="actions">
         <button type="button" onClick={toggleHint}>
-          {showHint ? "Hide hint" : "Show hint"}
+          {showHint ? "Dölj ledtråd" : "Visa ledtråd"}
         </button>
-
         {roomIsSolved && room.itemToAdd === null && (
           <button type="button" onClick={() => navigate("/victory")}>
-            Escape
+            Fly från anläggningen
+          </button>
+        )}
+        {roomIsSolved && room.itemToAdd !== null && nextRoom && (
+          <button
+            type="button"
+            onClick={() => navigate(`/rooms/${nextRoom.roomPath}`)}
+          >
+            Nästa rum
           </button>
         )}
       </div>
@@ -78,7 +88,7 @@ export const RoomPage = () => {
 
       {!roomIsSolved && (
         <section>
-          <h2>Use an item</h2>
+          <h2>Använd ett föremål</h2>
           <div className="item-buttons">
             {inventory.map((item) => (
               <button

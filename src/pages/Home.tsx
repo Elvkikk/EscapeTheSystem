@@ -4,14 +4,14 @@ export const Home = () => {
   return (
     <div className="text-page">
       <p className="eyebrow">Escape the System</p>
-      <h1>You are trapped inside Project NEXUS.</h1>
+      <h1>Du är instängd i Project NEXUS.</h1>
       <p>
-        Move through the abandoned AI research facility, solve each room with
-        the right item, and collect what you need to unlock the exit.
+        Gå igenom den övergivna AI-forskningsanläggningen, lös varje rum med
+        rätt föremål och samla det du behöver för att låsa upp utgången.
       </p>
 
       <Link className="button" to="/rooms/server-room">
-        Enter Server Room
+        Gå in i serverrummet
       </Link>
     </div>
   );

@@ -72,7 +72,7 @@ npm install
 ```bash
 npm run dev
 ```
-Appen öppnas på `http://localhost:5173`
+Appen öppnas på `localhost`
 
 **Bygga för produktion:**
 ```bash

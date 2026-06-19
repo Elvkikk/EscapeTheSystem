@@ -17,10 +17,10 @@ Spelet presenterar ett kedjeklarat pusselsystem där varje rum ger dig ett före
 
 ## Teknikstack
 
-- **React** (v19.2.6) - UI-bibliotek
-- **React Router** (v7.17.0) - Klientside routing
-- **TypeScript** - Typsäker utveckling
-- **Vite** - Build-verktyg och utvecklingsserver
+- **React**
+- **React Router** 
+- **TypeScript** 
+- **Vite** 
 - **ESLint** - Kodkvalitet
 - **Context API** - State management för inventarium
 
@@ -29,21 +29,21 @@ Spelet presenterar ett kedjeklarat pusselsystem där varje rum ger dig ett före
 ```
 src/
 ├── components/
-│   ├── Layout.tsx              # Huvudlayout med navigering
-│   └── inventory.tsx            # Inventarium-komponent
+│   ├── Layout.tsx             
+│   └── inventory.tsx            
 ├── context/
-│   ├── inventoryContextValue.ts # Context-definition och custom hook
-│   └── inventoryProvider.tsx    # Context provider med state-logik
+│   ├── inventoryContextValue.ts 
+│   └── inventoryProvider.tsx    
 ├── pages/
-│   ├── Home.tsx                # Startsida / spelintroduktion
-│   ├── RoomPage.tsx            # Huvudspelskomponent för rum
-│   ├── Victory.tsx             # Vinstskärm
-│   └── NotFound.tsx            # 404-sida
+│   ├── Home.tsx                
+│   ├── RoomPage.tsx            
+│   ├── Victory.tsx             
+│   └── NotFound.tsx            
 ├── data/
-│   ├── rooms.json              # Rumdefinitioner
-│   └── items.json              # Föremålsdefinitioner
-├── App.tsx                      # Huvudapp med routing-setup
-└── main.tsx                     # React entry point
+│   ├── rooms.json              
+│   └── items.json              
+├── App.tsx                      
+└── main.tsx                     
 ```
 
 ## Komma igång
